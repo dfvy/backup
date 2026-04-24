@@ -1,4 +1,4 @@
--- hello skid
+_G.HideKeybind = Enum.KeyCode.F1
 
 local Lib = {}
 if game.CoreGui:FindFirstChild("Lib") then
@@ -57,7 +57,7 @@ function Lib:CreateWindow(Name)
     local Minimize = Instance.new("TextButton")
     local glow_2 = Instance.new("ImageLabel")
 
- Main.Name = "Main"
+    Main.Name = "Main"
     Main.Parent = ScreenGui
     Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Main.BackgroundTransparency = 1.000
