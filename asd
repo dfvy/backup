@@ -1,4 +1,5 @@
 _G.HideKeybind = Enum.KeyCode.F1
+_G.AccentColor = Color3.fromRGB(255, 0, 0)
 
 local Lib = {}
 if game.CoreGui:FindFirstChild("Lib") then
@@ -83,7 +84,7 @@ function Lib:CreateWindow(Name)
     glow.Position = UDim2.new(0, -15, 0, -15)
     glow.Size = UDim2.new(1, 30, 1, 30)
     glow.Image = "rbxassetid://4905552912"
-    glow.ImageColor3 = Color3.fromRGB(255, 0, 0)
+    glow.ImageColor3 = _G.AccentColor
     glow.ScaleType = Enum.ScaleType.Slice
     glow.SliceCenter = Rect.new(20, 20, 280, 280)
 
@@ -155,7 +156,7 @@ function Lib:CreateWindow(Name)
     glow_2.Position = UDim2.new(0, -15, 0, -15)
     glow_2.Size = UDim2.new(1, 30, 1, 30)
     glow_2.Image = "rbxassetid://4905552912"
-    glow_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
+    glow_2.ImageColor3 = _G.AccentColor
     glow_2.ScaleType = Enum.ScaleType.Slice
     glow_2.SliceCenter = Rect.new(20, 20, 280, 280)
 
@@ -215,6 +216,7 @@ function Lib:CreateWindow(Name)
             end
         end)
     end
+
     AddDrag(Title_2,Main)
     
     function Window:Button(name, callback)
